@@ -22,14 +22,15 @@ body{overflow-x:hidden}.app{min-height:100vh;display:grid;place-items:center;pad
 /* gifts */
 .giftsTitle{font-size:clamp(30px,7vw,48px);font-weight:1000;text-align:center}.giftsSub{font-weight:850;text-align:center;opacity:.72;margin-bottom:22px}.giftGrid{display:grid;grid-template-columns:1fr 1fr;gap:16px;width:min(650px,100%)}.giftCard{background:#fff;border:3px solid #302b35;border-radius:25px;padding:17px;display:flex;align-items:center;gap:15px;cursor:pointer;box-shadow:0 7px 0 #e2b6c8;transition:.2s;text-align:left}.giftCard:hover{transform:translateY(-3px)}.giftIcon{font-size:50px;filter:drop-shadow(0 5px 2px #e3b1c4);animation:giftFloat 2s ease-in-out infinite}.giftCard:nth-child(2) .giftIcon{animation-delay:.3s}.giftCard:nth-child(3) .giftIcon{animation-delay:.6s}.giftText{font-weight:950;font-size:18px;line-height:1.15}.giftHint{font-size:13px;opacity:.55;font-weight:800;margin-top:4px}
 .giftStage{width:min(610px,100%);min-height:430px;display:grid;place-items:center;position:relative}.box{width:150px;height:115px;background:#f26b86;border:4px solid #302b35;border-radius:10px;position:relative;box-shadow:0 12px 0 #c94d69;animation:boxBounce 1.5s infinite}.box:before{content:"";position:absolute;left:58px;top:-4px;width:30px;height:115px;background:#ffd65d;border-left:3px solid #302b35;border-right:3px solid #302b35}.lid{position:absolute;left:-9px;top:-27px;width:160px;height:35px;background:#ff8198;border:4px solid #302b35;border-radius:10px;transform-origin:15% 100%;animation:lidOpen 1.5s forwards}.burst{position:absolute;inset:0;pointer-events:none}.item{position:absolute;font-size:42px;opacity:0;animation:burst 1.2s .8s forwards}.i1{left:18%;top:25%}.i2{right:17%;top:23%;animation-delay:.9s}.i3{left:26%;bottom:22%;animation-delay:1s}.i4{right:25%;bottom:20%;animation-delay:1.1s}.stars{position:absolute;inset:0;pointer-events:none}.star{position:absolute;font-size:22px;animation:twinkle 1.3s infinite}.star:nth-child(1){left:18%;top:16%}.star:nth-child(2){right:19%;top:17%;animation-delay:.3s}.star:nth-child(3){left:12%;bottom:18%;animation-delay:.6s}.star:nth-child(4){right:12%;bottom:16%;animation-delay:.9s}
-.danceFrame{width:min(360px,88vw);height:500px;border:4px solid #302b35;border-radius:26px;overflow:hidden;background:#d8d4bd;box-shadow:0 9px 0 #d2a5b8}.danceFrame video{width:100%;height:100%;object-fit:contain;display:block}.sorryPop{font-size:clamp(52px,14vw,110px);font-weight:1000;letter-spacing:5px;animation:pop .7s cubic-bezier(.2,1.7,.35,1) forwards;text-align:center}.gift3Text{width:100%;max-height:430px;overflow:auto;background:#fff0f5;border:3px solid #e4a7bb;border-radius:22px;padding:18px;font-size:17px;font-weight:800;line-height:1.48;white-space:pre-line}.choices{display:grid;grid-template-columns:1fr 1fr;gap:12px;width:100%;margin-top:15px}.choice{min-height:90px;font-size:17px}.choice{position:relative;z-index:5;touch-action:manipulation}.finalGiftReveal{width:min(430px,92vw);margin-top:18px;border:4px solid #302b35;border-radius:24px;overflow:hidden;box-shadow:0 10px 0 #d7a8ba;background:white}.finalGiftReveal img{display:block;width:100%;height:auto;max-height:430px;object-fit:cover}
+.danceFrame{width:min(360px,88vw);height:500px;border:4px solid #302b35;border-radius:26px;overflow:hidden;background:#d8d4bd;box-shadow:0 9px 0 #d2a5b8}.danceFrame video{width:100%;height:100%;object-fit:contain;display:block;pointer-events:none}.sorryPop{font-size:clamp(52px,14vw,110px);font-weight:1000;letter-spacing:5px;animation:pop .7s cubic-bezier(.2,1.7,.35,1) forwards;text-align:center}.gift3Text{width:100%;max-height:430px;overflow:auto;background:#fff0f5;border:3px solid #e4a7bb;border-radius:22px;padding:18px;font-size:17px;font-weight:800;line-height:1.48;white-space:pre-line}.choices{display:grid;grid-template-columns:1fr 1fr;gap:12px;width:100%;margin-top:15px}.choice{min-height:90px;font-size:17px}.choice{position:relative;z-index:5;touch-action:manipulation}.finalGiftReveal{width:min(430px,92vw);margin-top:18px;border:4px solid #302b35;border-radius:24px;overflow:hidden;box-shadow:0 10px 0 #d7a8ba;background:white}.finalGiftReveal img{display:block;width:100%;height:auto;max-height:430px;object-fit:cover}
 .finalMsg{text-align:center;font-size:24px;font-weight:950;line-height:1.3}.meterFinal{width:min(540px,100%);margin-top:20px}.starButton{width:110px;height:110px;border-radius:50%;border:4px solid #302b35;background:#ffd65d;font-size:52px;cursor:pointer;box-shadow:0 8px 0 #caa34a;transition:.15s}.starButton:active{transform:translateY(6px);box-shadow:0 2px 0 #caa34a}.meterFinal .meterFill{height:26px}
 .svgDoodle{width:300px;height:220px;animation:bob 1.5s ease-in-out infinite}.tears{animation:tearDrop .9s ease-in-out infinite}.happyDoodle{animation:happyBob .8s ease-in-out infinite}@keyframes tearDrop{50%{transform:translateY(8px);opacity:.65}}@keyframes happyBob{50%{transform:translateY(-10px) rotate(2deg)}}
 .realGift{width:min(620px,100%);height:430px;position:relative;display:grid;place-items:center;overflow:hidden;border-radius:26px;background:#241b1f}.realGift .scene{width:100%;height:100%;object-fit:cover;filter:saturate(1.05);}.realItem{position:absolute;opacity:0;width:100px;height:100px;object-fit:cover;border:3px solid white;border-radius:18px;box-shadow:0 10px 24px rgba(0,0,0,.28);animation:realBurst 1.4s .55s forwards}.r1{left:38%;top:45%;}.r2{left:42%;top:46%;animation-delay:.7s}.r3{left:43%;top:47%;animation-delay:.85s}.r4{left:44%;top:46%;animation-delay:1s}@keyframes realBurst{0%{opacity:0;transform:translate(0,30px) scale(.3) rotate(0)}20%{opacity:1}100%{opacity:1;transform:translate(var(--rx),var(--ry)) scale(1) rotate(var(--rr))}}
 .r1{--rx:-170px;--ry:-120px;--rr:-16deg}.r2{--rx:165px;--ry:-115px;--rr:15deg}.r3{--rx:-155px;--ry:120px;--rr:12deg}.r4{--rx:160px;--ry:115px;--rr:-12deg}
 .toast{position:fixed;left:50%;bottom:18px;transform:translate(-50%,20px);background:#302b35;color:#fff;padding:11px 18px;border-radius:18px;font-weight:900;opacity:0;pointer-events:none;transition:.3s;z-index:20}.toast.show{opacity:1;transform:translate(-50%,0)}
 @keyframes float{50%{transform:translateY(-12px) rotate(8deg)}}@keyframes bob{50%{transform:translateY(-8px) rotate(1deg)}}@keyframes waveArm{50%{transform:rotate(-18deg)}}@keyframes pulse{50%{transform:scale(1.14)}}@keyframes giftFloat{50%{transform:translateY(-6px) rotate(-3deg)}}@keyframes boxBounce{50%{transform:translateY(-5px)}}@keyframes lidOpen{0%{transform:rotate(0)}100%{transform:rotate(-18deg) translate(-4px,-8px)}}@keyframes burst{0%{opacity:0;transform:translate(0,40px) scale(.4) rotate(0)}70%{opacity:1}100%{opacity:1;transform:translate(var(--dx,0),var(--dy,-100px)) scale(1) rotate(18deg)}}.i1{--dx:-80px;--dy:-80px}.i2{--dx:85px;--dy:-90px}.i3{--dx:-65px;--dy:65px}.i4{--dx:70px;--dy:60px}@keyframes twinkle{50%{transform:scale(1.4) rotate(20deg);opacity:.8}}@keyframes pop{0%{transform:scale(.1) rotate(-8deg);opacity:0}100%{transform:scale(1) rotate(0);opacity:1}}
-audio{accent-color:#ef5368}audio::-webkit-media-controls-panel{background:#ffeaf2}.slapStage{width:min(600px,100%);min-height:310px;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;background:#fff0f5;border:3px dashed #efabc2;border-radius:26px;overflow:hidden}.slapFace{width:min(300px,75vw);height:auto;object-fit:contain;transition:transform .1s}.slapShake{animation:slapReact .28s ease-in-out}.slapText{font-size:18px;font-weight:950;text-align:center;margin-top:4px}.slapHint{font-size:18px;font-weight:900;margin-bottom:12px}.slapMeter{margin-top:18px}.@keyframes slapReact{0%{transform:translateX(0) rotate(0)}20%{transform:translateX(-18px) rotate(-6deg)}40%{transform:translateX(18px) rotate(6deg)}60%{transform:translateX(-12px) rotate(-4deg)}80%{transform:translateX(8px) rotate(3deg)}100%{transform:translateX(0) rotate(0)}}@media(max-width:520px){.panel{min-height:calc(100vh - 40px);padding:28px 15px;border-radius:28px}.message{min-height:130px}.choices{grid-template-columns:1fr}.giftGrid{grid-template-columns:1fr}.danceFrame{height:430px}.back{font-size:13px;padding:7px 10px}.doodleWrap{height:205px}.doodle{width:280px}}
+audio{accent-color:#ef5368}audio::-webkit-media-controls-panel{background:#ffeaf2}.slapStage{width:min(600px,100%);min-height:310px;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;background:#fff0f5;border:3px dashed #efabc2;border-radius:26px;overflow:hidden}.slapFace{width:min(300px,75vw);height:auto;object-fit:contain;transition:transform .1s}.slapShake{animation:slapReact .28s ease-in-out}.slapText{font-size:18px;font-weight:950;text-align:center;margin-top:4px}.slapHint{font-size:18px;font-weight:900;margin-bottom:12px}.slapMeter{margin-top:18px}.@keyframes slapReact{0%{transform:translateX(0) rotate(0)}20%{transform:translateX(-18px) rotate(-6deg)}40%{transform:translateX(18px) rotate(6deg)}60%{transform:translateX(-12px) rotate(-4deg)}80%{transform:translateX(8px) rotate(3deg)}100%{transform:translateX(0) rotate(0)}}.kickStage{width:min(620px,100%);height:360px;position:relative;overflow:hidden;background:linear-gradient(#fff5f8 0 72%,#dff3d8 72%);border:3px dashed #efabc2;border-radius:26px}.kickBin{position:absolute;right:7%;bottom:28px;width:95px;height:115px;background:#68736d;border-radius:10px 10px 18px 18px;border:4px solid #39423e;box-shadow:0 8px 0 #cba3b6}.kickBin:before{content:'';position:absolute;left:-8px;top:-13px;width:103px;height:18px;background:#4b5550;border-radius:8px;border:4px solid #39423e}.kickDog{position:absolute;left:22%;bottom:48px;font-size:78px;transform-origin:center;transition:transform .35s ease}.kickDog.k1{transform:translateX(24px) rotate(-8deg)}.kickDog.k2{transform:translateX(72px) rotate(12deg)}.kickDog.k3{animation:kickFly 1.15s cubic-bezier(.15,.75,.25,1) forwards}.kickPeople{position:absolute;left:5%;bottom:25px;display:flex;align-items:flex-end;gap:8px}.kickPeople img{width:115px;height:205px;object-fit:contain}.kickText{font-size:18px;font-weight:950;text-align:center;margin-top:12px}.kickBtn{margin-top:14px}.kickResult{font-size:24px;font-weight:1000;margin-top:12px}.@keyframes kickFly{0%{transform:translate(72px,0) rotate(12deg)}35%{transform:translate(170px,-125px) rotate(160deg)}70%{transform:translate(290px,-55px) rotate(300deg)}100%{transform:translate(390px,58px) rotate(430deg) scale(.8)}}
+@media(max-width:520px){.panel{min-height:calc(100vh - 40px);padding:28px 15px;border-radius:28px}.message{min-height:130px}.choices{grid-template-columns:1fr}.giftGrid{grid-template-columns:1fr}.danceFrame{height:430px}.back{font-size:13px;padding:7px 10px}.doodleWrap{height:205px}.doodle{width:280px}}
 
 /* Whole-site falling roses + stars */
 .fallLayer{position:fixed;inset:0;z-index:20;pointer-events:none;overflow:hidden}
@@ -104,6 +105,7 @@ function render(){
  if(page==='gift1')renderGift1();
  if(page==='gift2')renderGift2();
  if(page==='gift3')renderGift3();
+ if(page==='gift4')renderGift4();
  if(page==='couple')renderCoupleFlow();
  if(page==='chalo')renderChalo();
  if(page==='songs')renderSongs();
@@ -148,16 +150,16 @@ function renderGift1(){
 let danceAudio;
 function renderGift2(){
  stopSongAudio();
- app.innerHTML=shell(`<div class="giftsTitle">Gift 2 😂</div><div class="giftStage" style="min-height:510px"><div class="danceFrame"><video id="dance" playsinline preload="metadata" src="dance_loop_full.mp4"></video></div></div><div class="finalMsg">Bas aapko hasaane ke liye ye pagal dance 😂</div><audio id="danceAudio" controls preload="auto" class="audioPlayer"><source src="sorry_sorry.mp3" type="audio/mpeg"></audio>`);
+ app.innerHTML=shell(`<div class="giftsTitle">Gift 2 😂</div><div class="giftStage" style="min-height:510px"><div class="danceFrame"><video id="dance" playsinline muted preload="metadata" src="dance_with_sorry_full.mp4"></video></div></div><div class="finalMsg">Bas aapko hasaane ke liye ye pagal dance 😂</div><audio id="danceAudio" controls preload="auto" class="audioPlayer"><source src="sorry_sorry.mp3" type="audio/mpeg"></audio>`);
  const a=document.getElementById('danceAudio');
  const v=document.getElementById('dance');
  if(!a||!v)return;
  a.volume=.8;
  let finished=false;
  const syncVideo=()=>{
-   if(v.readyState>=1){
+   if(v.readyState>=1 && Number.isFinite(v.duration)){
      const t=Math.min(a.currentTime, Math.max(0,v.duration-0.05));
-     if(Math.abs(v.currentTime-t)>.18)v.currentTime=t;
+     if(Math.abs(v.currentTime-t)>.12)v.currentTime=t;
    }
  };
  a.addEventListener('play',()=>{
@@ -166,14 +168,12 @@ function renderGift2(){
  });
  a.addEventListener('pause',()=>v.pause());
  a.addEventListener('seeking',syncVideo);
- a.addEventListener('timeupdate',()=>{
-   if(!a.paused)syncVideo();
- });
+ a.addEventListener('timeupdate',()=>{if(!a.paused)syncVideo();});
  a.addEventListener('ended',()=>{
    if(finished)return;
    finished=true;
    v.pause();
-   const q=new Audio('mac-quack.mp3'); q.volume=.8; q.play().catch(()=>{});
+   const q=new Audio('mac-quack.mp3');q.volume=.8;q.play().catch(()=>{});
    app.innerHTML=shell('<div class="sorryPop">SORRY</div><div class="finalMsg" style="margin-top:16px">Plzz maaf kr dijiye 😿🤌🏻</div>');
    setTimeout(()=>renderCoupleFlow(),1300);
  });
@@ -224,12 +224,38 @@ function renderGift3(){
 }
 function slapOnce(){
  if(slapCount>=100)return;
- const a=document.getElementById('slapAudio');if(a){a.currentTime=0;a.volume=.7;a.load();a.play().catch(()=>toast('Audio load nahi hua 😿 ZIP ke saare files upload kijiye'));}
+ const a=document.getElementById('slapAudio');if(a){a.currentTime=0;a.volume=.7;a.play().catch(()=>toast('Audio load nahi hua 😿 ZIP ke saare files upload kijiye'));}
  slapCount=Math.min(100,slapCount+10);
  const face=document.getElementById('slapFace');if(face){face.classList.remove('slapShake');void face.offsetWidth;face.classList.add('slapShake');}
  const fill=document.getElementById('slapFill');const pct=document.getElementById('slapPct');if(fill)fill.style.width=slapCount+'%';if(pct)pct.textContent=slapCount+'%';
- if(slapCount>=100){setTimeout(()=>renderSlapSong(),450);}
+ if(slapCount>=100){setTimeout(()=>renderKickScene(),450);}
 }
+let kickCount=0;
+function renderKickScene(){
+ kickCount=0;
+ app.innerHTML=shell(`<div class="giftsTitle">Accha ji… ab ek aur 😂</div><div class="kickStage"><div class="kickPeople"><img src="male_d1.png" alt="male stick character"><img src="female_side.png" alt="female stick character"></div><div id="kickDog" class="kickDog" aria-label="cartoon dog">🐕</div><div class="kickBin"> </div></div><div id="kickText" class="kickText">Laat wala option 😂</div><button id="kickBtn" class="btn pinkbtn kickBtn" onclick="kickOnce()">🦶🏻 Ek laat</button><div id="kickResult" class="kickResult"></div>`);
+}
+function kickOnce(){
+ if(kickCount>=3)return;
+ const a=new Audio('kick-sound-effect-yes.mp3');a.volume=.65;a.play().catch(()=>{});
+ kickCount++;
+ const dog=document.getElementById('kickDog');
+ if(!dog)return;
+ dog.className='kickDog '+(kickCount===1?'k1':kickCount===2?'k2':'k3');
+ const t=document.getElementById('kickText');
+ if(t)t.textContent=kickCount===1?'Oho 😭':kickCount===2?'Arre rukooo 😂':'Bas teesri ho gayi 😭';
+ if(kickCount===3){
+   const b=document.getElementById('kickBtn');if(b)b.style.display='none';
+   setTimeout(()=>{
+     const st=document.querySelector('.kickStage');
+     if(st)st.innerHTML=`<div class="kickPeople"><img src="male_d1.png" alt="male stick character"><img src="female_side.png" alt="female stick character"></div><div class="kickBin"></div><div style="position:absolute;right:7%;bottom:48px;font-size:54px">🐕</div>`;
+     if(t)t.textContent='';
+     const r=document.getElementById('kickResult');if(r)r.textContent='Dur reh humse 😒😩';
+     setTimeout(()=>renderSlapSong(),1700);
+   },1150);
+ }
+}
+
 function renderSlapSong(){page='chalo';render();}
 function renderChalo(){
  app.innerHTML=shell(`<div class="giftsTitle">Accha ji, ab gaana sun lijiye 😂</div><div class="finalMsg">Ab maafi ke baad ye wala song bhi sun lijiye plzz 🤌🏻</div><audio id="chaloPlayer" controls preload="metadata" class="audioPlayer"><source src="chalo_2m31_3m00.mp3" type="audio/mpeg"></audio><button id="playChalo" class="btn pinkbtn" style="margin-top:12px">▶ Play Song</button><button class="btn whitebtn" style="margin-top:12px" onclick="stopSongAudio();page='gifts';render()">← Sare gifts par wapas</button>`);
